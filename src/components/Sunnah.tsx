@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Scale } from "lucide-react";
 
 export const Sunnah = () => {
   const hadiths = [
