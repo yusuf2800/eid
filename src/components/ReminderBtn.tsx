@@ -2,14 +2,12 @@ import { ArrowDown } from "lucide-react";
 import { motion } from "framer-motion";
 import React from "react";
 
-// Allowing null in the RefObject
 interface IProps {
   page: React.RefObject<HTMLDivElement | null>;
 }
 
 export const Reminder: React.FC<IProps> = ({ page }) => {
   const scrollTo = () => {
-    // Safely access page.current, which can initially be null
     page.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 

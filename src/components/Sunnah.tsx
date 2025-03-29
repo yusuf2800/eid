@@ -20,13 +20,13 @@ export const Sunnah = () => {
   ];
 
   return (
-    <div className="relative flex min-h-screen w-screen flex-col items-center justify-center gap-5">
+    <div className="relative flex min-h-screen w-screen flex-col items-center justify-center">
       {hadiths.map(({ path, content }, i) => (
         <motion.a
           href={path}
           target="_blank"
           key={i}
-          className="relative flex w-[400px] cursor-pointer flex-col items-center justify-center rounded-lg bg-slate-800/50 p-5 text-center font-semibold text-white shadow-2xl hover:bg-slate-700"
+          className="relative flex cursor-pointer flex-col items-center justify-center rounded-lg bg-slate-800/50 p-5 text-center font-semibold text-white shadow-2xl hover:bg-slate-700 sm:w-[300px] md:w-[500px] mx-2 my-3"
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.2, ease: "easeInOut" }}
