@@ -9,7 +9,7 @@ import { Links } from "./components/Links";
 export const App = () => {
   const [time, setTime] = useState(false);
   const [visible, setVisible] = useState(true);
-  const sunnahRef = useRef(null);
+  const sunnahRef = useRef<HTMLDivElement>(null);
   setTimeout(() => {
     setTime(true);
     setVisible(false);
@@ -35,9 +35,7 @@ export const App = () => {
               <div className="bbg-gradient-to-b flex min-h-screen min-w-screen from-[#020614] to-slate-950">
                 <Takbeer />
               </div>
-              <div
-                className="flex h-25 min-w-screen bg-gradient-to-b from-[#0b1628] to-slate-900"
-              >
+              <div className="flex h-25 min-w-screen bg-gradient-to-b from-[#0b1628] to-slate-900">
                 <Links />
               </div>
             </div>
