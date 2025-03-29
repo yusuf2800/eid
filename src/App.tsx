@@ -38,7 +38,7 @@ export const App = () => {
               >
                 <Sunnah />
               </div>
-              <div className="flex min-h-screen min-w-screen bg-gradient-to-b from-[#020614] to-slate-950">
+              <div className="flex min-h-screen min-w-screen bg-gradient-to-b from-[#020614] to-slate-950 my-10">
                 <Etiquettes />
               </div>
               <div className="g-gradient-to-b flex min-h-screen min-w-screen bg-gradient-to-b from-[#0b1628] to-slate-900">
