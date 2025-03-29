@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Scale } from "lucide-react";
 
 export const Sunnah = () => {
   const hadiths = [
@@ -26,9 +27,11 @@ export const Sunnah = () => {
           href={path}
           target="_blank"
           key={i}
-          className="relative flex cursor-pointer flex-col items-center justify-center rounded-lg bg-slate-800/50 p-5 text-center font-semibold text-white shadow-2xl hover:bg-slate-700 sm:w-[300px] md:w-[500px] mx-2 my-3"
+          className="relative mx-2 my-3 flex cursor-pointer flex-col items-center justify-center rounded-lg bg-slate-800/50 p-5 text-center font-semibold text-white shadow-2xl hover:bg-slate-700 sm:w-[300px] md:w-[500px]"
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 1.05 }}
           transition={{ duration: 1.2, ease: "easeInOut" }}
         >
           <label className="cursor-pointer">{content}</label>

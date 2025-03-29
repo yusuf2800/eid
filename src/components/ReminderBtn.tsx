@@ -20,6 +20,8 @@ export const Reminder: React.FC<IProps> = ({ page }) => {
         duration: 1.3,
         ease: "easeOut",
       }}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 1.05 }}
       onClick={scrollTo}
     >
       <span className="mr-0.5">Reminders</span>{" "}
