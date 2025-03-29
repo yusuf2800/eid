@@ -15,8 +15,8 @@ export const Card = () => {
   return (
     <motion.div
       className="flex h-[200px] cursor-pointer flex-col items-center justify-center overflow-hidden rounded-xl border border-slate-700 bg-slate-900 px-4 text-center shadow-xl sm:w-[300px] md:w-[500px]"
-      initial={{ y: 100}}
-      whileInView={{ y: 0 }}
+      initial={{ y: 200, opacity: 0}}
+      whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 1.3, ease: "easeOut" }}
     >
       <AnimatePresence mode="wait">

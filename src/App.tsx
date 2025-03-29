@@ -5,15 +5,21 @@ import { Reminder } from "./components/ReminderBtn";
 import { Sunnah } from "./components/Sunnah";
 import { Takbeer } from "./components/Takbeer";
 import { Links } from "./components/Links";
+import { Etiquettes } from "./components/Etiquettes";
 
 export const App = () => {
   const [time, setTime] = useState(false);
+  const [time2, setTime2] = useState(false);
   const [visible, setVisible] = useState(true);
   const sunnahRef = useRef<HTMLDivElement>(null);
   setTimeout(() => {
     setTime(true);
     setVisible(false);
-  }, 5300);
+  }, 6000);
+
+  setTimeout(() => {
+    setTime2(true);
+  }, 7000);
 
   return (
     <>
@@ -24,7 +30,7 @@ export const App = () => {
             <div className="flex flex-col">
               <div className="flex min-h-screen w-screen items-center justify-center">
                 <Card />
-                <Reminder page={sunnahRef} />
+                {time2 && <Reminder page={sunnahRef} />}
               </div>
               <div
                 className="flex min-h-screen min-w-screen bg-gradient-to-b from-[#0b1628] to-slate-900"
@@ -32,10 +38,13 @@ export const App = () => {
               >
                 <Sunnah />
               </div>
-              <div className="bbg-gradient-to-b flex min-h-screen min-w-screen from-[#020614] to-slate-950">
+              <div className="flex min-h-screen min-w-screen bg-gradient-to-b from-[#020614] to-slate-950">
+                <Etiquettes />
+              </div>
+              <div className="g-gradient-to-b flex min-h-screen min-w-screen bg-gradient-to-b from-[#0b1628] to-slate-900">
                 <Takbeer />
               </div>
-              <div className="flex h-25 min-w-screen bg-gradient-to-b from-[#0b1628] to-slate-900">
+              <div className="g-gradient-to-b flex h-25 min-w-screen from-[#0b1628] to-slate-900">
                 <Links />
               </div>
             </div>
