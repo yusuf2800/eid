@@ -1,5 +1,4 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { Repeat } from "lucide-react";
 import { useState, useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
 
