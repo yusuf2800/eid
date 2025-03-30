@@ -1,6 +1,5 @@
 import { ArrowDown } from "lucide-react";
 import { motion } from "framer-motion";
-import React, { useState } from "react";
 
 interface IProps {
   page: React.RefObject<HTMLDivElement | null>;
