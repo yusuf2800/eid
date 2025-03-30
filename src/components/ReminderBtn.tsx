@@ -13,7 +13,7 @@ export const Reminder: React.FC<IProps> = ({ page }) => {
 
   return (
     <motion.button
-      className="absolute bottom-6 flex animate-bounce cursor-pointer rounded-full bg-blue-600 px-4 py-2 text-white"
+      className="absolute bottom-29 flex animate-bounce cursor-pointer rounded-full bg-blue-600 px-4 py-2 text-white"
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{

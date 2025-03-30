@@ -20,7 +20,7 @@ export const Card = () => {
 
   return (
     <motion.div
-      className="flex h-[200px] cursor-pointer flex-col items-center justify-center overflow-hidden rounded-xl border border-slate-700 bg-slate-900 px-4 text-center shadow-xl w-[350px] mx-3 md:w-[500px]"
+      className="mx-3 flex h-[200px] w-[350px] cursor-pointer flex-col items-center justify-center overflow-hidden rounded-xl border border-slate-700 bg-slate-900 px-4 text-center shadow-xl md:w-[500px]"
       initial={{ y: 200, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 1.3, ease: "easeOut" }}
