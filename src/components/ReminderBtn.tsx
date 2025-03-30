@@ -1,6 +1,6 @@
 import { ArrowDown } from "lucide-react";
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useState } from "react";
 
 interface IProps {
   page: React.RefObject<HTMLDivElement | null>;
@@ -10,6 +10,7 @@ export const Reminder: React.FC<IProps> = ({ page }) => {
   const scrollTo = () => {
     page.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
+
 
   return (
     <motion.button
@@ -22,6 +23,7 @@ export const Reminder: React.FC<IProps> = ({ page }) => {
       }}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 1.05 }}
+      whileInView={{ y: 0, opacity: 1 }}
       onClick={scrollTo}
     >
       <span className="mr-0.5">Reminders</span>{" "}
