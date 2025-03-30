@@ -11,7 +11,7 @@ export const Links = () => {
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{
-            duration: 1.3,
+            duration: 2.5,
             ease: "easeOut",
           }}
         >
@@ -31,7 +31,7 @@ export const Links = () => {
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{
-            duration: 1.3,
+            duration: 2,
             ease: "easeOut",
           }}
         >
@@ -47,12 +47,12 @@ export const Links = () => {
 
         {/* whatsapp profile */}
         <motion.a
-          href="https://wa.me/447456523413"
+          href="https://wa.me/447823744469"
           target="_blank"
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{
-            duration: 1.3,
+            duration: 1.5,
             ease: "easeOut",
           }}
         >
@@ -68,12 +68,12 @@ export const Links = () => {
         {/* discord profile */}
         <motion.a
           href="https://discordapp.com/users/987382475221246022"
-          className="h-10 w-11"
+          className="h-11 w-11 mt-1"
           target="_blank"
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{
-            duration: 1.3,
+            duration: 1,
             ease: "easeOut",
           }}
         >
