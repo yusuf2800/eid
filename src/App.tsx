@@ -28,7 +28,7 @@ export const App = () => {
         {time && (
           <>
             <div className="flex flex-col">
-              <div className="flex min-h-screen w-screen items-center justify-center">
+              <div className="relative flex min-h-screen w-screen flex-col items-center justify-center">
                 <Card />
                 {time2 && <Reminder page={sunnahRef} />}
               </div>
@@ -38,7 +38,7 @@ export const App = () => {
               >
                 <Sunnah />
               </div>
-              <div className="flex min-h-screen min-w-screen bg-gradient-to-b from-[#020614] to-slate-950 my-10">
+              <div className="my-10 flex min-h-screen min-w-screen bg-gradient-to-b from-[#020614] to-slate-950">
                 <Etiquettes />
               </div>
               <div className="g-gradient-to-b flex min-h-screen min-w-screen bg-gradient-to-b from-[#0b1628] to-slate-900">
