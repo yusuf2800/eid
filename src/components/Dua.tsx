@@ -10,11 +10,9 @@ export const Dua = () => {
       >
         <div className="w-[300px] sm:w-[500px]">
           <h1 className="text-3xl leading-9 font-[500] text-white">
-            تقبل الله منا ومنكم{" "}
+            تَقَبَّلَ اللهُ مِنَّا وَمِنكُم
           </h1>
-          <p className="mt-5 text-white">
-            May Allah Accept Our Good Deeds
-          </p>
+          <p className="mt-5 text-white">May Allah Accept Our Good Deeds</p>
         </div>
       </motion.div>
     </>
