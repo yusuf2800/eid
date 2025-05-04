@@ -7,6 +7,7 @@ import { Takbeer } from "./components/Takbeer";
 import { Links } from "./components/Links";
 import { Etiquettes } from "./components/Etiquettes";
 import { Dua } from "./components/Dua";
+import { motion, useScroll } from "framer-motion";
 
 export const App = () => {
   const [time, setTime] = useState(false);
@@ -22,8 +23,25 @@ export const App = () => {
     setTime2(true);
   }, 7000);
 
+  const { scrollYProgress } = useScroll();
+
   return (
     <>
+      {time && (
+        <motion.div
+          style={{
+            scaleX: scrollYProgress,
+            position: "fixed",
+            top: 0,
+            left: 0,
+            right: 0,
+            height: 8,
+            originX: 0,
+            zIndex: 10,
+            backgroundColor: "white",
+          }}
+        />
+      )}
       <div className="flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-b from-[#020614] to-slate-950">
         {visible && <Opener />}
         {time && (
